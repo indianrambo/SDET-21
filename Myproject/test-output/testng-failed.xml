@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Com.vtiger.Testscripts.Createnewcontact">
+        <methods>
+          <include name="newcontactcreation"/>
+          <include name="lunchbrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Com.vtiger.Testscripts.Createnewcontact -->
+      <class name="Com.vtiger.Testscripts.Createnewproductgold">
+        <methods>
+          <include name="lunchbrowser"/>
+          <include name="login"/>
+          <include name="newproductcreation"/>
+          <include name="logout"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Com.vtiger.Testscripts.Createnewproductgold -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
